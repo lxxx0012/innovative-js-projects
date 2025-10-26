@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Eco-Friendly Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="assets/icons/leaf.svg" alt="Leaf Icon" class="icon">
+            Eco-Friendly Tracker
+            <img src="assets/icons/leaf.svg" alt="Leaf Icon" class="icon">
+        </h1>
+    </header>
+
+    <main>
+        <!-- Progress Tracker -->
+        <section id="progress-container">
+            <h2>Daily Eco-Friendly Progress:</h2>
+            <div id="progress-bar"></div>
+            <img src="assets/icons/progress-tree.svg" alt="Progress Tree" class="icon">
+        </section>
+
+        <!-- Impact Chart -->
+        <section>
+            <h2>Carbon Footprint Reduction:</h2>
+            <canvas id="impactChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Eco Challenges -->
+        <section id="challenge-container">
+            <h2>Today's Challenges:</h2>
+            <ul>
+                <li>
+                    <img src="assets/icons/bike.svg" alt="Bike Icon" class="icon">
+                    <input type="checkbox" onchange="completeChallenge()"> Bike to work
+                </li>
+                <li>
+                    <img src="assets/icons/meal.svg" alt="Plant Icon" class="icon">
+                    <input type="checkbox" onchange="completeChallenge()"> Eat plant-based meals
+                </li>
+            </ul>
+        </section>
+
+        <!-- Community Feed -->
+        <section id="community-feed">
+            <h2>Share your tips!</h2>
+            <textarea id="tip-input" placeholder="Write your eco-friendly tip here..."></textarea>
+            <button onclick="submitTip()">Submit</button>
+            <div id="tips-display"></div>
+            <img src="assets/images/community.jpg" alt="Community Banner" class="banner" height="200px">
+        </section>
+
+        <!-- Leaderboard -->
+        <section id="leaderboard">
+            <h2>Top Eco Heroes:</h2>
+            <ul id="leaderboard-list">
+                <li>
+                    <img src="assets/icons/cup.svg" alt="Trophy Icon" class="icon">
+                    Alex - 150 points
+                </li>
+                <li>
+                    <img src="assets/icons/cup.svg" alt="Trophy Icon" class="icon">
+                    Jamie - 140 points
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eco-Friendly Tracker</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

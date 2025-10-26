@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Recipe Hub</title>
+</head>
+<body>
+    <header>
+        <h1>RecipeHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#upload">Upload Recipe</a></li>
+                <li><a href="#live-events">Live Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="recipes">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h3>Recipe 1</h3>
+                <p>Description for Recipe 1.</p>
+                <button onclick="upvote()">Upvote</button>
+                <button onclick="downvote()">Downvote</button>
+                <p>Votes: <span id="vote-count">0</span></p>
+            </div>
+        </section>
+        <section id="upload">
+            <h2>Upload Your Recipe</h2>
+            <form id="upload-form">
+                <input type="text" placeholder="Recipe Name" required>
+                <textarea placeholder="Recipe Instructions" required></textarea>
+                <input type="file" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="live-events">
+            <h2>Live Cooking Events</h2>
+            <p>Join live sessions with chefs and community members!</p>
+            <video id="localVideo" autoplay></video>
+            <video id="remoteVideo" autoplay></video>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 RecipeHub</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

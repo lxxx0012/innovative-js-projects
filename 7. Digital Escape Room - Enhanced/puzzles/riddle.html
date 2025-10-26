@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/riddle.css">
+    <title>Enhanced Escape Room</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Escape Room Adventure</h1>
+        <p>Can you escape? Solve the puzzles to unlock the door!</p>
+
+        <!-- Puzzles Section -->
+        <div id="puzzles">
+            <!-- Time Manipulation Puzzle -->
+            <div id="riddle-puzzle" class="puzzle">
+                <h2>Riddle Puzzle</h2>
+                <p>What has to be broken before you can use it?</p>
+                <input type="text" id="riddle-answer" placeholder="Type your answer">
+                <button id="submit-riddle">Submit</button>
+            </div>
+
+            <!-- Hidden Object Puzzle -->
+            <div id="image-puzzle" class="puzzle">
+                <h2>Hidden Object Puzzle</h2>
+                <img id="clue-image" src="../assets/images/Library.jpg" alt="Library Image" usemap="#clue-map">
+                <map name="clue-map">
+                    <area shape="rect" coords="50,50,100,100" alt="Book" title="Book" onclick="revealClue()">
+                </map>
+            </div>
+
+            <!-- Sound Puzzle -->
+            <div id="sound-puzzle" class="puzzle">
+                <h2>Sound Puzzle</h2>
+                <audio id="sound1" src="../assets/sounds/bird-chirp.wav"></audio>
+                <audio id="sound2" src="../assets/sounds/footsteps.wav"></audio>
+                <audio id="sound3" src="../assets/sounds/ticking-clock.wav"></audio>
+                <p>Play the sounds in the correct order:</p>
+                <button data-sound="sound1">Sound 1</button>
+                <button data-sound="sound2">Sound 2</button>
+                <button data-sound="sound3">Sound 3</button>
+            </div>
+
+            <!-- Navigation Section -->
+            <div id="navigation">
+                <button id="back-button">Back</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/riddle.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

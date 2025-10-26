@@ -1,0 +1,160 @@
+/* Base Styles (Light Theme) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+header button:hover {
+    background-color: #005a9e;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="range"], input[type="number"], input[type="text"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Instrument Library */
+.library {
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+}
+
+#instrument-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sound {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: grab;
+    text-align: center;
+    width: 100px;
+}
+
+/* Global Waveform and Mixer Area */
+.mixer-visualization-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.waveform-container {
+    width: 100%;
+    height: 150px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.mixer-area {
+    width: 100%;
+    min-height: 200px;
+    background-color: #eaeaea;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#global-waveform {
+    width: 100%;
+    height: 150px;
+    background-color: #f4f4f4; /* Add color to confirm visibility */
+    border: 1px solid #ccc; /* Optional for clarity */
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #fdfdfd;
+}
+
+header.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+button.dark-theme {
+    background-color: #555;
+    color: #fff;
+}
+
+button.dark-theme:hover {
+    background-color: #222;
+}

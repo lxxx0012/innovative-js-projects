@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Enhanced Features Escape Room</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Escape Room Adventure</h1>
+        <p>Can you escape? Solve the puzzles to unlock the door!</p>
+
+        <!-- Puzzles Section -->
+        <div id="generic-puzzle" class="puzzle">
+            <h2>Generic Puzzle</h2>
+            <p>This is placeholder for the puzzle content.</p>
+        </div>
+
+        <!-- Hidden Object Puzzle -->
+        <div id="image-puzzle" class="puzzle">
+            <h2>Hidden Object Puzzle</h2>
+            <img id="clue-image" src="../assets/images/Library.jpg" alt="Library Image" usemap="#clue-map">
+            <map name="clue-map">
+                <area shape="rect" coords="50,50,100,100" alt="Book" title="Book" onclick="revealClue()">
+            </map>
+        </div>
+
+        <!-- Navigation Section -->
+        <div id="navigation">
+            <button id="back-button">Back</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

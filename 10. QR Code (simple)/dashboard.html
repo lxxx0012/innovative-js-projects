@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BrickMMO - Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">BrickMMO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><button class="login-btn">Login</button></li>
+                <li><button class="register-btn">Register</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="dashboard-content">
+            <h1>Welcome, [Username]!</h1>
+
+            <div class="dashboard-section">
+                <h2>Your Created Events & LEGO QR Codes</h2>
+                <p>Manage your events and their associated dynamic links.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Static QR Code</th>
+                            <th>Dynamic Link</th>
+                            <th>Current Target URL</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Event Name]</td>
+                            <td><img src="https://qrcodekit.com/" alt="Static QR Code" width="50"></td>
+                            <td><a href="https://qrkit.co/laFCX9">https://qrkit.co/laFCX9</a></td>
+                            <td>[Current Target URL Stored in Your DB]</td>
+                            <td><button>Edit URL</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <div class="dashboard-section">
+                <h2>Create New Event & LEGO QR Code</h2>
+                <form id="createEventForm">
+                    <label for="eventName">Event Name: </label><br>
+                    <input type="text" id="eventName" name="eventName"><br><br>
+                    <label for="eventURL">Event URL: </label><br>
+                    <input type="url" id="eventURL" name="eventURL"><br><br>
+                    <button type="submit">Generate Link & QR Code</button>
+                    <p class="info">A static QR code will be generated for a unique BrickMMO link that you an later update.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrickMMO - Built with passion for LEGO!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Mental Wellness Hub</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Mental Wellness Hub</h1>
+        <p>Your source for mental health information and support.</p>
+    </header>
+
+    <nav>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#soundscapes">Soundscapes</a>
+        <a href="#daily-challenge">Daily Challenge</a>
+        <a href="#mood-analytics">Mood Analytics</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+
+    <main>
+        <section id="recommendations">
+            <h2>Recommended for You</h2>
+            <ul></ul>
+        </section>
+
+        <section id="soundscapes">
+            <h2>Choose Your Soundscape</h2>
+            <select id="soundscape-select">
+                <option value="rain">Rain</option>
+                <option value="waves">Waves</option>
+                <option value="birds">Birdsong</option>
+            </select>
+        </section>
+
+        <section id="daily-challenge">
+            <h2>Today's Challenge</h2>
+            <p></p>
+        </section>
+
+        <section id="mood-analytics">
+            <h2>Your Mood Analytics</h2>
+            <canvas id="mood-chart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="achievements">
+            <h2>Your Achievements</h2>
+            <div id="badges"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mental Wellness Hub | All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

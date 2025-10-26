@@ -1,0 +1,31 @@
+{
+    "start": {
+        "text": "You wake up in a mysterious forest. Do you explore or stay put?",
+        "image": "images/Forest.jpg",
+        "choices": [
+            { "text": "Explore", "next": "explore" },
+            { "text": "Stay put", "next": "stay" }
+        ]
+    },
+    "explore": {
+        "text": "You find a hidden path leading to an ancient temple. Enter or turn back?",
+        "image": "images/Path.jpg",
+        "choices": [
+            { "text": "Enter", "next": "temple" },
+            { "text": "Turn back", "next": "start" }
+        ]
+    },
+    "stay": {
+        "text": "You hear rustling in the bushes. Will you investigate or run?",
+        "image": "images/Bushes.jpg",
+        "choices": [
+            { "text": "Investigate", "next": "explore" },
+            { "text": "Run", "next": "start" }
+        ]
+    },
+    "temple": {
+        "text": "Inside the temple, you discover an ancient artifact. The adventure continues...",
+        "image": "images/Temple.jpg",
+        "choices": []
+    }
+}

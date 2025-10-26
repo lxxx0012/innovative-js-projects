@@ -1,0 +1,107 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/background.jpg') no-repeat center center fixed, #000; /* Fallback color */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game Container */
+#game-container {
+    padding: 20px;
+    margin: auto;
+    width: 90%; /* Adjusted for wider responsiveness */
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Puzzle Sections */
+.puzzle {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #fff; /* Highlight puzzle sections */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle puzzle background */
+}
+
+/* Hidden Object Puzzle Styling */
+#image-puzzle {
+    text-align: center; /* Center-align content */
+}
+
+#clue-image {
+    max-width: 100%; /* Responsive image sizing */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #fff;
+    border-radius: 5px; /* Subtle rounding for style */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin: 20px auto;
+}
+
+area {
+    cursor: pointer; /* Pointer cursor for clickable areas */
+}
+
+/* Buttons Styling */
+button {
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #0277bd;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button:focus {
+    outline: 2px solid #ff9800; /* Add focus outline for accessibility */
+    outline-offset: 4px;
+}
+
+/* Navigation Buttons */
+#navigation {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add spacing between buttons */
+}
+
+#navigation button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    transition: background-color 0.3s ease;
+}
+
+#navigation button:hover {
+    background-color: #43a047;
+}
+
+/* Map Responsiveness */
+@media (max-width: 768px) {
+    #game-container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    #navigation {
+        flex-direction: column; /* Stack navigation buttons vertically */
+    }
+
+    #clue-image {
+        width: 100%; /* Ensure image scales properly */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button size for smaller screens */
+    }
+}

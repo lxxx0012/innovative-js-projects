@@ -1,0 +1,36 @@
+#jigsaw-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center; /* Align images horizontally within each grid*/
+    align-items: center; /* Align images vertically within each grid*/
+    width: 100%;
+    overflow: hidden; /* Hide any overflowing images */
+}
+
+#jigsaw-grid img {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+    margin: 0; /* Ensure no margin interferes */
+    object-fit: cover; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+#jigsaw-puzzle {
+    width: 100%;
+    max-width: 600%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the puzzle horizontally */
+}
+
+@media (max-width: 768px) {
+    #jigsaw-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduces to two columns */
+    }
+
+    #jigsaw-grid img {
+        width: 80px; /* Adjust image size for small screens */
+        height: 80px;
+    }
+}

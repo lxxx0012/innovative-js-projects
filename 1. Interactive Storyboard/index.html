@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Interactive Storytelling</title>
+</head>
+<body>
+    <header>
+        <h1>Interactive Storytelling</h1>
+        <p>Intereactive Storytelling whwere the <img> tag is predefined int he HTML and the src attribute dynamically updatd via JS as the story progresses.</p>
+    </header>
+    <main>
+        <div id="story-container">
+            <p id="story-text">Welcome to the adventure! Click below to begin.</p>
+            <!-- Predefined img tag for updating dynamically -->
+            <img src="images/Adventure.jpg" alt="Story scene" id="story-image" id="story-image">
+        </div>
+        <div id="choices-container"></div>
+        <button id="start-btn">Start Story</button>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

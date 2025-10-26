@@ -1,0 +1,42 @@
+body {
+    font-family: Lato, Merriweather, Playfair Display, Great Vibes;
+    background-color: #f5f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #91c8e4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #87BBAA;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #91C8E4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

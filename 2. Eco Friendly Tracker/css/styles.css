@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #DBF3C9;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  header img.icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  #progress-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: green;
+    border-radius: 5px;
+    transition: width 0.5s;
+  }
+  
+  .progress-image {
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  #challenge-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .community-feed button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+#community-feed textarea {
+    margin-bottom: 10px; /* Add spacing below the textarea */
+    padding: 15px; /* Increase padding for better usability */
+    width: 100%; /* Make it full width */
+    height: 150px; /* Increase the height */
+    font-size: 16px; /* Enhance text readability */
+    border: 1px solid #ccc; /* Add a border for structure */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+
+  .community-feed button:hover {
+    background-color: #45a049; /* Add hover effect */
+  }
+  
+  .icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .banner {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 1em;
+    background-color: #4caf50;
+    color: white;
+  }
+  

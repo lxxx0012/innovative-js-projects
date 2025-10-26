@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Lato', Merriweather, Playfair Display, Great Vibes;
+    background-color: #F5F9FC;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #91C8E4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #87BBAA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #91C8E4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#badges .badge {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

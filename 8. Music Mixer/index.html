@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/wavesurfer.js@7/dist/wavesurfer.esm.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Music Mixer</title>
+</head>
+<body>
+    <header>
+        <h1>Music Mixer</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <main>
+        <!-- Instrument Library Section -->
+        <section class="library">
+            <h2>Instrument Library</h2>
+            <input type="text" id="search" placeholder="Search instruments...">
+            <div id="instrument-list">
+                <div draggable="true" class="sound" data-audio="./assets/audio/Crushing The Ice.mp3">Piano</div>
+                <div draggable="true" class="sound" data-audio="./assets/audio/Shela.mp3">Drums</div>
+                <div draggable="true" class="sound" data-audio="./assets/audio/Unfinished Dreams.mp3">Guitar</div>
+                <div draggable="true" class="sound" data-audio="./assets/audio/The Calm.mp3">Saxophone</div>
+            </div>
+        </section>
+
+        <!-- Combined Section for Global Waveform & Mixer -->
+        <section class="mixer-visualization-section">
+            <h2>Music Mixer & Global Waveform</h2>
+            <button id="start-button">Start Waveform</button>
+
+            <!-- Global Waveform Visualization -->
+            <div id="global-waveform" class="waveform-container"></div>
+            
+            <!-- Mixer Area -->
+            <div id="drop-area" class="mixer-area">
+                <p>Drop your audio files or instruments here</p>
+            </div>
+        </section>
+
+        <!-- Audio Controls Section -->
+        <section class="controls">
+            <h2>Audio Controls</h2>
+            <button id="reset-controls">Reset</button>
+            <h3>Equalizer</h3>
+            <label for="bass">Bass:</label>
+            <input type="range" id="bass" min="-10" max="10" step="1" value="0">
+            <label for="mid">Mid:</label>
+            <input type="range" id="mid" min="-10" max="10" step="1" value="0">
+            <label for="treble">Treble:</label>
+            <input type="range" id="treble" min="-10" max="10" step="1" value="0">
+            <h3>Delay Effect</h3>
+            <label for="delay">Delay (seconds):</label>
+            <input type="range" id="delay" min="0" max="1" step="0.01" value="0.3">
+            <h3>Fade In/Out</h3>
+            <label for="fade-in">Fade In (ms):</label>
+            <input type="number" id="fade-in" min="0" value="1000">
+            <label for="fade-out">Fade Out (ms):</label>
+            <input type="number" id="fade-out" min="0" value="1000">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Music Mixer</p>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>

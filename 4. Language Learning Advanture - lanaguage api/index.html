@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Speech Recognition with Translator</title>
+</head>
+<body>
+  <header>
+    <h1>Speech Recognition with Real-Time Translator</h1>
+  </header>
+  <main>
+    <section>
+      <label for="languageSelect">Choose a language for recognition:</label>
+      <select id="languageSelect">
+        <option value="en-US">English (US)</option>
+        <option value="es-ES">Spanish (Spain)</option>
+        <option value="fr-FR">French (France)</option>
+        <option value="de-DE">German (Germany)</option>
+        <option value="zh-CN">Chinese (China)</option>
+        <option value="ja-JP">Japanese (Japan)</option>
+      </select>
+    </section>
+    <section>
+      <button id="startRecognition">Start Speaking</button>
+      <button id="stopRecognition" disabled>Stop Speaking</button>
+    </section>
+    <section>
+      <textarea id="speechOutput" readonly placeholder="Your speech will appear here..."></textarea>
+    </section>
+    <section>
+      <label for="translationLanguage">Translate to:</label>
+      <select id="translationLanguage">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="zh">Chinese</option>
+        <option value="ja">Japanese</option>
+      </select>
+    </section>
+    <section>
+      <textarea id="translatedOutput" readonly placeholder="Translated text will appear here..."></textarea>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 LinguoQuest</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
